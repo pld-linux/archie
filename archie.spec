@@ -1,13 +1,14 @@
 Summary:	Simple archie client
 Summary(pl):	Klient us³ugi sieciowej archie
 Name:		archie
+Version:	1.4.1
+Release:	10
 License:	non-commercial
 Group:		Applications/Networking
 Group(de):	Applikationen/Netzwerkwesen
 Group(pl):	Aplikacje/Sieciowe
-Version:	1.4.1
-Release:	10
 Source0:	c-%{name}-%{version}.tar.gz
+#Source0:	http://www.netsw.org/infosys/archie/c-%{name}-%{version}-FIXED.tar.gz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
