@@ -15,14 +15,14 @@ Tool that will let you check a database containing thousands of
 entries for the files that're available at FTP sites around the world.
 
 %description -l pl
-Narzêdzie, pozwalaj±ce wyszukiwaæ pliki w bazie serwerów FTP.
+Narzêdzie pozwalaj±ce wyszukiwaæ pliki w bazie serwerów FTP.
 
 %prep
 %setup -q 
 
 %build
-%{__make} OPTIONS="%{?debug:-O0 -g -DDEBUG}%{!?debug:$RPM_OPT_FLAGS} -I."\
-	DEFINES="" LDFLAGS="%{!?debug:-s}"
+%{__make} OPTIONS="%{rpmcflags} %{?debug:-DDEBUG} -I." \
+	DEFINES="" LDFLAGS="%{rpmldflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
