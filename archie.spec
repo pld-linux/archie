@@ -30,13 +30,11 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 install %{name} $RPM_BUILD_ROOT%{_bindir}
 install archie.man $RPM_BUILD_ROOT%{_mandir}/man1/archie.1
 
-gzip -9nf README README.ALEX Prospero
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README README.ALEX Prospero
 %attr(755,root,root) %{_bindir}/archie
 %{_mandir}/man1/*
