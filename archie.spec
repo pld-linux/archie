@@ -21,7 +21,7 @@ Narzêdzie, pozwalaj±ce wyszukiwaæ pliki w bazie serwerów FTP.
 %setup -q 
 
 %build
-%{__make} OPTIONS="%{?debug:-O -g -DDEBUG}%{!?debug:$RPM_OPT_FLAGS} -I."\
+%{__make} OPTIONS="%{?debug:-O0 -g -DDEBUG}%{!?debug:$RPM_OPT_FLAGS} -I."\
 	DEFINES="" LDFLAGS="%{!?debug:-s}"
 
 %install
