@@ -17,7 +17,7 @@ entries for the files that're available at FTP sites around the world.
 Narzêdzie pozwalaj±ce wyszukiwaæ pliki w bazie serwerów FTP.
 
 %prep
-%setup -q 
+%setup -q
 
 %build
 %{__make} OPTIONS="%{rpmcflags} %{?debug:-DDEBUG} -I." \
@@ -27,7 +27,7 @@ Narzêdzie pozwalaj±ce wyszukiwaæ pliki w bazie serwerów FTP.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 
-install %{name} $RPM_BUILD_ROOT%{_bindir} 
+install %{name} $RPM_BUILD_ROOT%{_bindir}
 install archie.man $RPM_BUILD_ROOT%{_mandir}/man1/archie.1
 
 gzip -9nf README README.ALEX Prospero
