@@ -5,8 +5,6 @@ Version:	1.4.1
 Release:	11
 License:	non-commercial
 Group:		Applications/Networking
-Group(de):	Applikationen/Netzwerkwesen
-Group(pl):	Aplikacje/Sieciowe
 Source0:	c-%{name}-%{version}.tar.gz
 #Source0:	http://www.netsw.org/infosys/archie/c-%{name}-%{version}-FIXED.tar.gz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
