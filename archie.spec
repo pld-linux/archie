@@ -2,7 +2,7 @@ Summary:	Simple archie client
 Summary(pl):	Klient us³ugi sieciowej archie
 Name:		archie
 Version:	1.4.1
-Release:	10
+Release:	11
 License:	non-commercial
 Group:		Applications/Networking
 Group(de):	Applikationen/Netzwerkwesen
@@ -23,7 +23,7 @@ Narzêdzie pozwalaj±ce wyszukiwaæ pliki w bazie serwerów FTP.
 
 %build
 %{__make} OPTIONS="%{rpmcflags} %{?debug:-DDEBUG} -I." \
-	DEFINES="" LDFLAGS="%{rpmldflags}"
+	DEFINES="-DNEED_TIME_H" LDFLAGS="%{rpmldflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
