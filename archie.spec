@@ -6,6 +6,7 @@ Release:	11
 License:	non-commercial
 Group:		Applications/Networking
 Source0:	c-%{name}-%{version}.tar.gz
+# Source0-md5:	7db9015d540ece0347e96bfee45af30a
 #Source0:	http://www.netsw.org/infosys/archie/c-%{name}-%{version}-FIXED.tar.gz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
