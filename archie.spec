@@ -1,5 +1,5 @@
 Summary:	Simple archie client
-Summary(pl):	Klient us³ugi sieciowej archie
+Summary(pl.UTF-8):   Klient usÅ‚ugi sieciowej archie
 Name:		archie
 Version:	1.4.1
 Release:	13
@@ -14,8 +14,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Tool that will let you check a database containing thousands of
 entries for the files that're available at FTP sites around the world.
 
-%description -l pl
-Narzêdzie pozwalaj±ce wyszukiwaæ pliki w bazie serwerów FTP.
+%description -l pl.UTF-8
+NarzÄ™dzie pozwalajÄ…ce wyszukiwaÄ‡ pliki w bazie serwerÃ³w FTP.
 
 %prep
 %setup -q
