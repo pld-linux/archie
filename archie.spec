@@ -1,5 +1,5 @@
 Summary:	Simple archie client
-Summary(pl.UTF-8):   Klient usługi sieciowej archie
+Summary(pl.UTF-8):	Klient usługi sieciowej archie
 Name:		archie
 Version:	1.4.1
 Release:	13
